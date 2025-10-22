@@ -14,46 +14,58 @@
 
 ### الواجهة الأمامية (Frontend)
 - Node.js (v14 أو أحدث)
-- npm أو yarn
+- npm 
 
 ### الواجهة الخلفية (Backend)
-- Python 3.8 أو أحدث
-- Flask
-- PyTorch
-- OpenCV
-- YOLOv5
 
 ## التثبيت والإعداد
 
-### 1. تثبيت متطلبات Python
-```bash
-pip install -r requirements.txt
-```
 
 ### 2. تثبيت متطلبات Node.js
 ```bash
 npm install
 ```
 
-### 3. إعداد النموذج
-يجب وضع نموذج YOLOv5 المدرب في المسار المحدد في ملف `plant_disease_api.py`:
-```
-MODEL_PATH = "D:/DatabasesANDModels/plant_disease_coco/yolo_output/plant_disease_model/weights/best.pt"
-YAML_PATH = "D:/DatabasesANDModels/plant_disease_coco/data.yaml"
-```
-
-## تشغيل التطبيق
-
-### 1. تشغيل خادم API
-```bash
-python plant_disease_api.py
-```
-سيتم تشغيل الخادم على المنفذ 5000.
 
 ### 2. تشغيل واجهة المستخدم
+
 ```bash
 npm run dev
 ```
+
+
+###ثم تشغيل سيرفر لتفعيل ال chat bot
+
+```bash 
+node server.js
+```
+
+### 3. تلشغيل تحليل الامراض 
+```bash
+cd 1cnn
+```
+ثم انشاء بيئة
+```bash 
+python -m venv venv
+```
+ثم تفعيل البيئة
+
+```bash 
+python -m venv venv
+```
+ثم تنزيل المتطلبات 
+```bash 
+venv\Scripts\activate
+```
+ثم تشغيل ال api لتفعيلها في الموقع
+```bash 
+python app.py
+```
+
+
+
+
+
 سيتم تشغيل واجهة المستخدم على المنفذ 5173.
 
 ## استخدام النظام
@@ -63,27 +75,6 @@ npm run dev
 3. قم بتحميل صورة للنبات المصاب
 4. انتظر حتى يتم تحليل الصورة
 5. اطلع على النتائج والتوصيات العلاجية
-
-## تحسين النموذج
-
-لتحسين دقة النموذج، يمكنك:
-
-1. جمع المزيد من الصور لأمراض النباتات
-2. تحسين ملصقات البيانات (annotations) في مجموعة البيانات
-3. إعادة تدريب النموذج باستخدام ملف `train_yolov5.py`
-
-## معلومات عن النموذج
-
-- **نوع النموذج**: YOLOv5 (You Only Look Once)
-- **مجموعة البيانات**: صور مصنفة بتنسيق COCO
-- **الأمراض المدعومة**:
-  - مرض نبات الصوبا
-  - البياض الدقيقي
-  - البياض الزغبي
-  - تبقع الأوراق السوداء
-  - مرض غير معروف
-
-## استكشاف الأخطاء وإصلاحها
 
 ### مشكلة: لا يتم التعرف على المرض بشكل صحيح
 - تأكد من وضوح الصورة وإضاءتها المناسبة
