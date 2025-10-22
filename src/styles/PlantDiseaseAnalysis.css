@@ -1,0 +1,346 @@
+.plant-disease-container {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  max-width: 800px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 40px 20px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.dark .plant-disease-container {
+  background: linear-gradient(135deg, #1a1e2b 0%, #111827 100%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  color: #e5e7eb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.plant-disease-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  animation: gradientShift 3s infinite alternate;
+}
+
+.dark .plant-disease-container::before {
+  background: linear-gradient(90deg, #059669, #10B981);
+}
+
+@keyframes gradientShift {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+.plant-disease-container h1 {
+  color: #2E7D32;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  position: relative;
+  display: inline-block;
+}
+
+.dark .plant-disease-container h1 {
+  color: #4ADE80;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .plant-disease-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.plant-disease-container h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  border-radius: 2px;
+  animation: expandWidth 1s ease-out forwards;
+}
+
+@keyframes expandWidth {
+  from { width: 0; }
+  to { width: 80px; }
+}
+
+.upload-section {
+  background-color: rgba(220, 237, 200, 0.3);
+  border: 2px dashed #8BC34A;
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s infinite alternate;
+}
+
+.dark .upload-section {
+  background-color: rgba(20, 83, 45, 0.2);
+  border: 2px dashed #10B981;
+}
+
+@media (max-width: 768px) {
+  .upload-section {
+    padding: 20px 15px;
+  }
+  
+  .file-input-wrapper svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes pulseGlow {
+  from { box-shadow: 0 0 0 rgba(139, 195, 74, 0); }
+  to { box-shadow: 0 0 15px rgba(139, 195, 74, 0.5); }
+}
+
+.upload-section:hover {
+  border-color: #4CAF50;
+  background-color: rgba(220, 237, 200, 0.5);
+  transform: translateY(-3px);
+}
+
+.file-input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-input-wrapper svg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  color: #4CAF50;
+}
+
+.dark .file-input-wrapper svg {
+  color: #10B981;
+}
+
+.plant-disease-container input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file-input-label {
+  color: #2E7D32;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dark .file-input-label {
+  color: #4ADE80;
+}
+
+.file-input-hint {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.dark .file-input-hint {
+  color: #9CA3AF;
+}
+
+.plant-disease-container button {
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  color: white;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark .plant-disease-container button {
+  background: linear-gradient(90deg, #059669, #10B981);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.plant-disease-container button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: all 0.6s ease;
+}
+
+.plant-disease-container button:hover::before {
+  left: 100%;
+}
+
+.plant-disease-container button:hover {
+  background: linear-gradient(90deg, #43A047, #7CB342);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(76, 175, 80, 0.4);
+}
+
+.dark .plant-disease-container button:hover {
+  background: linear-gradient(90deg, #047857, #0EA5E9);
+  box-shadow: 0 6px 14px rgba(16, 185, 129, 0.4);
+}
+
+.plant-disease-container button:disabled {
+  background: linear-gradient(90deg, #A5D6A7, #C5E1A5);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.dark .plant-disease-container button:disabled {
+  background: linear-gradient(90deg, #065F46, #0D9488);
+  opacity: 0.6;
+}
+
+.result-section {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.5s ease-out 0.3s forwards;
+}
+
+.dark .result-section {
+  background-color: #1f2937;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .result-section {
+    padding: 15px 10px;
+  }
+  
+  .plant-disease-container #result {
+    font-size: 1.1rem;
+  }
+  
+  .disease-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .info-card {
+    padding: 10px;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.plant-disease-container #result {
+  font-size: 1.3rem;
+  color: #333;
+  min-height: 32px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.dark .plant-disease-container #result {
+  color: #e5e7eb;
+}
+
+.result-positive {
+  color: #2E7D32;
+  font-weight: 600;
+}
+
+.dark .result-positive {
+  color: #4ADE80;
+}
+
+.result-negative {
+  color: #D32F2F;
+  font-weight: 600;
+}
+
+.dark .result-negative {
+  color: #F87171;
+}
+
+.preview-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  transform: scale(0.9);
+  opacity: 0;
+  animation: scaleIn 0.5s ease-out 0.5s forwards;
+}
+
+@media (max-width: 768px) {
+  .preview-container {
+    margin-top: 20px;
+  }
+  
+  .preview-container img {
+    max-height: 250px;
+  }
+  
+  .plant-disease-container button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.preview-container img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid #fff;
+}
+
+.dark .preview-container img {
+  border: 3px solid #1f2937;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}

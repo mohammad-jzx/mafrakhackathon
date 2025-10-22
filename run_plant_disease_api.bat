@@ -1,0 +1,3 @@
+@echo off
+echo Starting Plant Disease Detection API...
+python plant_disease_api.py 

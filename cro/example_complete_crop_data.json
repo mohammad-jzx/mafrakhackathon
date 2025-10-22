@@ -1,0 +1,131 @@
+{
+  "name": "قمح",
+  "name_en": "Wheat",
+  "scientific_name": "Triticum aestivum",
+  "icon": "🌾",
+  "category": "حبوب",
+  
+  "environmental_requirements": {
+    "ph_min": 6.0,
+    "ph_max": 7.5,
+    "ph_optimal": 6.8,
+    "temp_min": 15,
+    "temp_max": 25,
+    "temp_optimal": 20,
+    "rain_min": 300,
+    "rain_max": 1000,
+    "rain_optimal": 500,
+    "humidity_min": 40,
+    "humidity_max": 70,
+    "humidity_optimal": 55
+  },
+  
+  "soil_requirements": {
+    "soil_types": ["طينية", "طميية"],
+    "soil_drainage": "جيد",
+    "soil_depth_min": 60,
+    "soil_organic_matter_min": 2.5,
+    "soil_salinity_tolerance": "متوسط",
+    "soil_compaction_tolerance": "منخفض"
+  },
+  
+  "timing": {
+    "planting_months": ["نوفمبر", "ديسمبر", "يناير"],
+    "harvesting_months": ["مايو", "يونيو"],
+    "duration_days": 150,
+    "growth_stages": {
+      "germination": 10,
+      "tillering": 40,
+      "stem_elongation": 30,
+      "heading": 25,
+      "grain_filling": 35,
+      "maturation": 10
+    }
+  },
+  
+  "rotation": {
+    "beneficial_predecessors": ["فول", "عدس", "حمص", "برسيم"],
+    "harmful_predecessors": ["قمح", "شعير", "ذرة"],
+    "beneficial_successors": ["قطن", "ذرة", "خضروات"],
+    "rotation_cycle_years": 3,
+    "nitrogen_fixing": false,
+    "soil_improvement": false
+  },
+  
+  "water_management": {
+    "water_requirement_mm": 450,
+    "irrigation_frequency": "كل 10-15 يوم",
+    "drought_tolerance": "متوسط",
+    "flood_tolerance": "منخفض",
+    "critical_water_stages": ["إنبات", "تكوين السنابل", "امتلاء الحبوب"]
+  },
+  
+  "tolerance": {
+    "frost_tolerance": "عالي",
+    "heat_tolerance": "متوسط",
+    "wind_tolerance": "متوسط",
+    "disease_resistance": ["صدأ الأوراق", "عفن الجذور"],
+    "pest_resistance": ["حشرة المن", "دودة الحشد"]
+  },
+  
+  "economics": {
+    "yield_per_hectare": 4500,
+    "market_price_per_kg": 0.8,
+    "production_cost_per_hectare": 1800,
+    "profit_margin": 0.35,
+    "market_demand": "عالي",
+    "export_potential": true
+  },
+  
+  "nutrition": {
+    "protein_content": 13.2,
+    "carbohydrate_content": 71.2,
+    "fat_content": 1.5,
+    "fiber_content": 12.2,
+    "nutritional_value": "عالي",
+    "gluten_content": "عالي"
+  },
+  
+  "geography": {
+    "altitude_min": 0,
+    "altitude_max": 2000,
+    "suitable_regions": ["الشمال", "الوسط"],
+    "climate_zones": ["معتدل", "شبه جاف"],
+    "latitude_range": "25-45"
+  },
+  
+  "biological_interactions": {
+    "companion_plants": ["برسيم", "عدس"],
+    "antagonistic_plants": ["جوز", "كافور"],
+    "beneficial_insects": ["نحل", "خنفساء أرضية"],
+    "pollination_type": "ذاتي",
+    "allelopathy": "متوسط"
+  },
+  
+  "sustainability": {
+    "carbon_footprint": 1.2,
+    "water_efficiency": "متوسط",
+    "soil_improvement": false,
+    "biodiversity_impact": "محايد",
+    "renewable_energy_potential": "عالي"
+  },
+  
+  "quality": {
+    "storage_life_days": 365,
+    "processing_suitability": ["طحن", "خبز", "مكرونة"],
+    "export_quality": true,
+    "shelf_life": 730,
+    "quality_grades": ["ممتاز", "جيد", "تجاري"]
+  },
+  
+  "management": {
+    "fertilizer_requirements": {
+      "nitrogen": 120,
+      "phosphorus": 60,
+      "potassium": 40
+    },
+    "mechanization_level": "عالي",
+    "labor_intensity": "متوسط",
+    "technology_adoption": "عالي"
+  }
+}

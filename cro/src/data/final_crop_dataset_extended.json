@@ -1,0 +1,557 @@
+[
+  {
+    "name": "قمح",
+    "name_en": "Wheat",
+    "icon": "🌾",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 7.5,
+    "temp_min": 15,
+    "temp_max": 25,
+    "rain_min": 300,
+    "rain_max": 1000,
+    "growing_season": [
+      "نوفمبر",
+      "ديسمبر",
+      "يناير",
+      "فبراير"
+    ],
+    "crop_rotation": [
+      "عدس",
+      "فول"
+    ],
+    "duration_days": 120
+  },
+  {
+    "name": "شعير",
+    "name_en": "Barley",
+    "icon": "🌾",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 8.0,
+    "temp_min": 12,
+    "temp_max": 25,
+    "rain_min": 200,
+    "rain_max": 800,
+    "growing_season": [
+      "نوفمبر",
+      "ديسمبر"
+    ],
+    "crop_rotation": [
+      "عدس",
+      "حمص"
+    ],
+    "duration_days": 120
+  },
+  {
+    "name": "ذرة",
+    "name_en": "Maize",
+    "icon": "🌽",
+    "soil_type": "",
+    "ph_min": 5.5,
+    "ph_max": 7.5,
+    "temp_min": 18,
+    "temp_max": 30,
+    "rain_min": 400,
+    "rain_max": 1200,
+    "growing_season": [
+      "مارس",
+      "أبريل",
+      "مايو"
+    ],
+    "crop_rotation": [
+      "فول",
+      "بطاطا"
+    ],
+    "duration_days": 90
+  },
+  {
+    "name": "سمسم",
+    "name_en": "Sesame",
+    "icon": "🌱",
+    "soil_type": "",
+    "ph_min": 5.5,
+    "ph_max": 8.0,
+    "temp_min": 25,
+    "temp_max": 35,
+    "rain_min": 400,
+    "rain_max": 800,
+    "growing_season": [
+      "مايو",
+      "يونيو"
+    ],
+    "crop_rotation": [
+      "فول",
+      "عدس"
+    ],
+    "duration_days": 120
+  },
+  {
+    "name": "زيتون",
+    "name_en": "Olive",
+    "icon": "🫒",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 8.5,
+    "temp_min": 10,
+    "temp_max": 40,
+    "rain_min": 200,
+    "rain_max": 600,
+    "growing_season": [
+      "فبراير",
+      "مارس",
+      "أبريل"
+    ],
+    "crop_rotation": [],
+    "duration_days": 180
+  },
+  {
+    "name": "نخيل تمر",
+    "name_en": "Date Palm",
+    "icon": "🌴",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "حمص",
+    "name_en": "Chickpea",
+    "icon": "🌰",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 9.0,
+    "temp_min": 15,
+    "temp_max": 30,
+    "rain_min": 400,
+    "rain_max": 600,
+    "growing_season": [
+      "ديسمبر",
+      "يناير"
+    ],
+    "crop_rotation": [
+      "قمح",
+      "شعير"
+    ],
+    "duration_days": 140
+  },
+  {
+    "name": "طماطم",
+    "name_en": "Tomato",
+    "icon": "🍅",
+    "soil_type": "",
+    "ph_min": 5.5,
+    "ph_max": 7.5,
+    "temp_min": 18,
+    "temp_max": 27,
+    "rain_min": 400,
+    "rain_max": 800,
+    "growing_season": [
+      "مارس",
+      "أبريل",
+      "مايو"
+    ],
+    "crop_rotation": [
+      "بصل",
+      "فول"
+    ],
+    "duration_days": 100
+  },
+  {
+    "name": "بصل",
+    "name_en": "Onion",
+    "icon": "🧅",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 7.0,
+    "temp_min": 12,
+    "temp_max": 25,
+    "rain_min": 350,
+    "rain_max": 550,
+    "growing_season": [
+      "أكتوبر",
+      "نوفمبر"
+    ],
+    "crop_rotation": [
+      "طماطم",
+      "سبانخ"
+    ],
+    "duration_days": 120
+  },
+  {
+    "name": "بطاطا",
+    "name_en": "Potato",
+    "icon": "🥔",
+    "soil_type": "",
+    "ph_min": 5.0,
+    "ph_max": 6.5,
+    "temp_min": 15,
+    "temp_max": 25,
+    "rain_min": 300,
+    "rain_max": 500,
+    "growing_season": [
+      "فبراير",
+      "مارس",
+      "أكتوبر",
+      "نوفمبر"
+    ],
+    "crop_rotation": [
+      "فاصولياء",
+      "عدس"
+    ],
+    "duration_days": 110
+  },
+  {
+    "name": "القطن",
+    "name_en": "cotton",
+    "icon": "🌱",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "الذرة",
+    "name_en": "corn",
+    "icon": "🌽",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "الحمضيات",
+    "name_en": "citrus",
+    "icon": "🍊",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "فول سوداني",
+    "name_en": "Peanut",
+    "icon": "🥜",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "فول",
+    "name_en": "Fava Bean",
+    "icon": "🌱",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 7.5,
+    "temp_min": 12,
+    "temp_max": 25,
+    "rain_min": 400,
+    "rain_max": 800,
+    "growing_season": [
+      "نوفمبر",
+      "ديسمبر"
+    ],
+    "crop_rotation": [
+      "قمح",
+      "ذرة"
+    ],
+    "duration_days": 130
+  },
+  {
+    "name": "خيار",
+    "name_en": "Cucumber",
+    "icon": "🥒",
+    "soil_type": "",
+    "ph_min": 5.5,
+    "ph_max": 7.0,
+    "temp_min": 20,
+    "temp_max": 30,
+    "rain_min": 500,
+    "rain_max": 700,
+    "growing_season": [
+      "مارس",
+      "أبريل",
+      "مايو"
+    ],
+    "crop_rotation": [
+      "كوسا",
+      "جزر"
+    ],
+    "duration_days": 75
+  },
+  {
+    "name": "باذنجان",
+    "name_en": "Eggplant",
+    "icon": "🍆",
+    "soil_type": "",
+    "ph_min": 5.5,
+    "ph_max": 7.0,
+    "temp_min": 20,
+    "temp_max": 30,
+    "rain_min": 400,
+    "rain_max": 600,
+    "growing_season": [
+      "أبريل",
+      "مايو"
+    ],
+    "crop_rotation": [
+      "كوسا",
+      "بصل"
+    ],
+    "duration_days": 110
+  },
+  {
+    "name": "فلفل حلو",
+    "name_en": "Bell Pepper",
+    "icon": "🫑",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "عنب",
+    "name_en": "Grapes",
+    "icon": "🍇",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "برتقال",
+    "name_en": "Orange",
+    "icon": "🍊",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "بطيخ",
+    "name_en": "Watermelon",
+    "icon": "🍉",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 6.8,
+    "temp_min": 23,
+    "temp_max": 30,
+    "rain_min": 400,
+    "rain_max": 600,
+    "growing_season": [
+      "مارس",
+      "أبريل"
+    ],
+    "crop_rotation": [
+      "فاصولياء",
+      "بصل"
+    ],
+    "duration_days": 90
+  },
+  {
+    "name": "كوسا",
+    "name_en": "Zucchini",
+    "icon": "🥒",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 7.5,
+    "temp_min": 20,
+    "temp_max": 30,
+    "rain_min": 400,
+    "rain_max": 600,
+    "growing_season": [
+      "مارس",
+      "أبريل",
+      "مايو"
+    ],
+    "crop_rotation": [
+      "عدس",
+      "بصل"
+    ],
+    "duration_days": 65
+  },
+  {
+    "name": "فصة",
+    "name_en": "Alfalfa",
+    "icon": "🌿",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "تفاح",
+    "name_en": "Apple",
+    "icon": "🍏",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "مشمش",
+    "name_en": "Apricot",
+    "icon": "🍑",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "خوخ",
+    "name_en": "Peach",
+    "icon": "🍑",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "رمان",
+    "name_en": "Pomegranate",
+    "icon": "🍎",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "ليمون",
+    "name_en": "Lemon",
+    "icon": "🍋",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "كرفس",
+    "name_en": "Celery",
+    "icon": "🥬",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 6.5,
+    "temp_min": 15,
+    "temp_max": 21,
+    "rain_min": 500,
+    "rain_max": 800,
+    "growing_season": [
+      "أكتوبر",
+      "نوفمبر"
+    ],
+    "crop_rotation": [
+      "فجل",
+      "بصل"
+    ],
+    "duration_days": 85
+  },
+  {
+    "name": "نعناع",
+    "name_en": "Mint",
+    "icon": "🌿",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  },
+  {
+    "name": "ريحان",
+    "name_en": "Basil",
+    "icon": "🌿",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 7.5,
+    "temp_min": 20,
+    "temp_max": 30,
+    "rain_min": 400,
+    "rain_max": 600,
+    "growing_season": [
+      "أبريل",
+      "مايو"
+    ],
+    "crop_rotation": [
+      "نعنع",
+      "بصل"
+    ],
+    "duration_days": 60
+  },
+  {
+    "name": "فجل",
+    "name_en": "Radish",
+    "icon": "🌶️",
+    "soil_type": "",
+    "ph_min": 6.0,
+    "ph_max": 7.0,
+    "temp_min": 10,
+    "temp_max": 25,
+    "rain_min": 350,
+    "rain_max": 500,
+    "growing_season": [
+      "أكتوبر",
+      "نوفمبر"
+    ],
+    "crop_rotation": [
+      "سبانخ",
+      "كوسا"
+    ],
+    "duration_days": 50
+  },
+  {
+    "name": "ذرة رفيعة",
+    "name_en": "Sorghum",
+    "icon": "🌾",
+    "soil_type": "",
+    "ph_min": 0.0,
+    "ph_max": 0.0,
+    "temp_min": 0.0,
+    "temp_max": 0.0,
+    "rain_min": 0,
+    "rain_max": 0
+  }
+]

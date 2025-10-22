@@ -1,0 +1,13 @@
+transformers
+torch
+scikit-learn
+fastapi
+uvicorn
+flask
+flask-cors
+numpy
+opencv-python
+pillow
+pandas
+tensorflow
+matplotlib 

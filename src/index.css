@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Ensure readable default text color in light mode */
+  color: #1f2937;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .recharts-cartesian-axis-tick-value {
+  text-anchor: end !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Animation for loading */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom gradient backgrounds */
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Focus styles for accessibility */
+.focus\:ring-2:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--tw-ring-color);
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors font-medium;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors font-medium;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-xl shadow-lg border border-gray-200 p-6;
+}
+
+.card-hover {
+  @apply hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+}
+
+/* Status indicators */
+.status-excellent {
+  @apply bg-green-500 text-white;
+}
+
+.status-good {
+  @apply bg-blue-500 text-white;
+}
+
+.status-warning {
+  @apply bg-yellow-500 text-white;
+}
+
+.status-danger {
+  @apply bg-red-500 text-white;
+}
+
+/* Arabic number formatting */
+.arabic-numbers {
+  font-feature-settings: "tnum";
+}
+
+/* Responsive text */
+@media (max-width: 640px) {
+  .text-responsive {
+    font-size: 0.875rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-break {
+    page-break-after: always;
+  }
+}
+
+/* Dark mode styles */
+:root.dark {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
+
+:root.dark .bg-white,
+:root.dark .bg-gray-100,
+:root.dark .bg-green-100,
+:root.dark .bg-blue-100,
+:root.dark .bg-green-50,
+:root.dark .bg-blue-50,
+:root.dark .bg-gradient-to-br,
+:root.dark .bg-gradient-to-r {
+  background: #23272f !important;
+  background-image: none !important;
+}
+
+:root.dark .text-black,
+:root.dark .text-gray-900,
+:root.dark .text-gray-800,
+:root.dark .text-gray-700,
+:root.dark .text-gray-600,
+:root.dark .text-green-700,
+:root.dark .text-green-800,
+:root.dark .text-blue-700,
+:root.dark .text-blue-800,
+:root.dark .text-red-700,
+:root.dark .text-yellow-700,
+:root.dark .text-purple-700 {
+  color: #fff !important;
+}
+
+:root.dark .border-gray-200,
+:root.dark .border-gray-300,
+:root.dark .border-green-200,
+:root.dark .border-blue-200,
+:root.dark .border-red-200,
+:root.dark .border-yellow-200,
+:root.dark .border-purple-200 {
+  border-color: #444 !important;
+}
+
+:root.dark .shadow,
+:root.dark .shadow-lg,
+:root.dark .shadow-xl,
+:root.dark .shadow-sm {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7) !important;
+}
+
+:root.dark button,
+:root.dark .hover\:bg-gray-100:hover {
+  background: #222 !important;
+  color: #fff !important;
+}
+
+:root.dark input,
+:root.dark textarea,
+:root.dark select {
+  background: #23272f !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+:root.dark .hover\:bg-green-600:hover,
+:root.dark .hover\:bg-blue-600:hover,
+:root.dark .hover\:bg-red-200:hover {
+  filter: brightness(1.2);
+}
+
+:root.dark .focus\:ring-green-500:focus {
+  box-shadow: 0 0 0 2px #22d3ee !important;
+}
+
+/* خاص بقائمة اختيار المحصول: إزالة الخط الأبيض عند السحب */
+:root.dark .bg-gradient-to-t.from-white.to-transparent {
+  background: linear-gradient(to top, #23272f, transparent) !important;
+}
+
+/* صناديق الإجابة ذات الخلفية الفاتحة */
+:root.dark .bg-yellow-50,
+:root.dark .bg-yellow-100,
+:root.dark .bg-gray-50,
+:root.dark .bg-white,
+:root.dark .bg-blue-50 {
+  background: #23272f !important;
+  color: #fff !important;
+}
+
+/* نصوص صناديق الإجابة */
+:root.dark .text-yellow-800,
+:root.dark .text-gray-800,
+:root.dark .text-gray-600,
+:root.dark .text-blue-800 {
+  color: #fff !important;
+}
+
+/* رؤوس الجداول */
+:root.dark th,
+:root.dark .table-header,
+:root.dark .bg-white th,
+:root.dark .bg-gray-50 th {
+  background: #23272f !important;
+  color: #fff !important;
+}
+
+/* صناديق التفاصيل في الكروت */
+:root.dark .details-card,
+:root.dark .bg-gray-50,
+:root.dark .bg-white {
+  background: #23272f !important;
+}
+
+/* خطوط الجداول */
+:root.dark table,
+:root.dark tr,
+:root.dark td,
+:root.dark th {
+  border-color: #444 !important;
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-24px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-slideDown {
+  animation: slideDown 0.5s cubic-bezier(.4,2,.6,1) both;
+}
+
+@keyframes fadeInUp {
+  0% { 
+    opacity: 0; 
+    transform: translateY(-50px) translateX(-30px) scale(0.9); 
+  }
+  25% { 
+    opacity: 0.4; 
+    transform: translateY(-25px) translateX(-15px) scale(0.95); 
+  }
+  50% { 
+    opacity: 0.7; 
+    transform: translateY(-10px) translateX(-5px) scale(0.98); 
+  }
+  75% { 
+    opacity: 0.9; 
+    transform: translateY(-2px) translateX(-1px) scale(1.01); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0) translateX(0) scale(1); 
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Gradient border animation */
+@keyframes gradient-x {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.animate-gradient-x {
+  background: linear-gradient(90deg, #e5e7eb, #d1d5db, #9ca3af, #e5e7eb);
+  background-size: 300% 300%;
+  animation: gradient-x 3s ease infinite;
+  border: none;
+  position: relative;
+}
+
+.animate-gradient-x::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: white;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+:root.dark .animate-gradient-x::before {
+  background: #1f2937;
+}
+
+/* Card flip styles */
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Estilos para la barra de navegación avanzada */
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #22c55e, #3b82f6);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::before {
+  transform: translateX(0);
+}
+
+.nav-icon-container {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.nav-item:hover .nav-icon-container {
+  transform: translateY(-5px) scale(1.1);
+}
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+.active-nav-indicator {
+  animation: pulse-border 2s infinite;
+}
+
+/* Mejoras para dark mode */
+:root.dark .nav-item-active {
+  background: linear-gradient(145deg, #2d3748, #1a202c);
+  box-shadow: 5px 5px 10px #151a23, -5px -5px 10px #354152;
+}
+
+:root.dark .nav-icon-active {
+  background: linear-gradient(145deg, #22c55e, #16a34a);
+}
+
+/* Transiciones suaves para cambios de modo */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ChatBubble CSS Variables */
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --accent: #0ea5e9;
+  --accent-contrast: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Transition for theme switching */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Remove global color/background to avoid white text in light theme
+       when system prefers dark. Rely on .dark class for theme switching. */
+    /* color: rgba(255, 255, 255, 0.87); */
+    /* background-color: #242424; */
+    
+    /* Chat Bubble Theme Variables - Dark Mode */
+    --bg: #1e1e2e;
+    --card: #2a2a3c;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --border: #3f3f5a;
+    --accent: #0ea5e9;
+    --accent-contrast: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.3);
+  }
+}
+
+:root.dark {
+  --bg: #1f2937;
+  --card: #374151;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --border: #4b5563;
+  --accent: #0ea5e9;
+  --accent-contrast: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Animación para aparecer elementos */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* Flip Card Styles */
+.flip-card { position: relative; width: 100%; height: 100%; }
+.flip-card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.5s; }
+.rotate-y-180 { transform: rotateY(180deg); }
+.flip-card-front, .flip-card-back { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }

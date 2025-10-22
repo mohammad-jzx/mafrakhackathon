@@ -1,0 +1,2754 @@
+[
+  {
+    "name": "قمح",
+    "name_en": "Wheat",
+    "scientific_name": "Triticum aestivum",
+    "icon": "🌾",
+    "category": "حبوب",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 15,
+      "temp_max": 25,
+      "temp_optimal": 20,
+      "rain_min": 300,
+      "rain_max": 1000,
+      "rain_optimal": 500,
+      "humidity_min": 40,
+      "humidity_max": 70
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طينية", "طميية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 60,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["نوفمبر", "ديسمبر", "يناير", "فبراير"],
+      "harvesting_months": ["مايو", "يونيو"],
+      "duration_days": 120,
+      "growth_stages": {
+        "germination": 10,
+        "tillering": 40,
+        "heading": 25,
+        "maturation": 45
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["عدس", "فول", "حمص"],
+      "harmful_predecessors": ["قمح", "شعير"],
+      "beneficial_successors": ["ذرة", "قطن"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 450,
+      "irrigation_frequency": "كل 10-15 يوم",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "عالي",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["صدأ الأوراق"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 4500,
+      "market_price_per_kg": 0.8,
+      "production_cost_per_hectare": 1800,
+      "profit_margin": 0.35,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 13.2,
+      "carbohydrate_content": 71.2,
+      "fat_content": 1.5,
+      "fiber_content": 12.2,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 2000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه جاف"]
+    }
+  },
+  {
+    "name": "شعير",
+    "name_en": "Barley",
+    "scientific_name": "Hordeum vulgare",
+    "icon": "🌾",
+    "category": "حبوب",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 8.0,
+      "ph_optimal": 7.0,
+      "temp_min": 12,
+      "temp_max": 25,
+      "temp_optimal": 18,
+      "rain_min": 200,
+      "rain_max": 800,
+      "rain_optimal": 400,
+      "humidity_min": 35,
+      "humidity_max": 65
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طينية", "طميية", "رملية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 50,
+      "soil_organic_matter_min": 2.0,
+      "soil_salinity_tolerance": "عالي"
+    },
+    
+    "timing": {
+      "planting_months": ["نوفمبر", "ديسمبر"],
+      "harvesting_months": ["أبريل", "مايو"],
+      "duration_days": 120,
+      "growth_stages": {
+        "germination": 8,
+        "tillering": 35,
+        "heading": 30,
+        "maturation": 47
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["عدس", "حمص", "فول"],
+      "harmful_predecessors": ["شعير", "قمح"],
+      "beneficial_successors": ["قطن", "خضروات"],
+      "rotation_cycle_years": 2,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 350,
+      "irrigation_frequency": "كل 12-18 يوم",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "متوسط"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "عالي",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["عفن الجذور"],
+      "pest_resistance": ["دودة الورق"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 3800,
+      "market_price_per_kg": 0.7,
+      "production_cost_per_hectare": 1500,
+      "profit_margin": 0.30,
+      "market_demand": "متوسط"
+    },
+    
+    "nutrition": {
+      "protein_content": 10.8,
+      "carbohydrate_content": 73.5,
+      "fat_content": 1.2,
+      "fiber_content": 15.6,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 2500,
+      "suitable_regions": ["الشمال", "الوسط", "الجنوب"],
+      "climate_zones": ["جاف", "شبه جاف", "معتدل"]
+    }
+  },
+  {
+    "name": "ذرة",
+    "name_en": "Maize",
+    "scientific_name": "Zea mays",
+    "icon": "🌽",
+    "category": "حبوب",
+    
+    "environmental_requirements": {
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "ph_optimal": 6.5,
+      "temp_min": 18,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 400,
+      "rain_max": 1200,
+      "rain_optimal": 700,
+      "humidity_min": 50,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "طينية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 80,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل", "مايو"],
+      "harvesting_months": ["يوليو", "أغسطس", "سبتمبر"],
+      "duration_days": 90,
+      "growth_stages": {
+        "germination": 7,
+        "vegetative": 45,
+        "flowering": 20,
+        "maturation": 18
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["فول", "بطاطا", "عدس"],
+      "harmful_predecessors": ["ذرة", "سمسم"],
+      "beneficial_successors": ["قمح", "شعير"],
+      "rotation_cycle_years": 2,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 600,
+      "irrigation_frequency": "كل 7-10 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["عفن الساق"],
+      "pest_resistance": ["دودة الذرة"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 8000,
+      "market_price_per_kg": 0.6,
+      "production_cost_per_hectare": 2200,
+      "profit_margin": 0.40,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 9.4,
+      "carbohydrate_content": 74.3,
+      "fat_content": 4.7,
+      "fiber_content": 7.3,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1800,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "سمسم",
+    "name_en": "Sesame",
+    "scientific_name": "Sesamum indicum",
+    "icon": "🌱",
+    "category": "بذور زيتية",
+    
+    "environmental_requirements": {
+      "ph_min": 5.5,
+      "ph_max": 8.0,
+      "ph_optimal": 6.8,
+      "temp_min": 25,
+      "temp_max": 35,
+      "temp_optimal": 30,
+      "rain_min": 400,
+      "rain_max": 800,
+      "rain_optimal": 600,
+      "humidity_min": 45,
+      "humidity_max": 70
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["رملية", "طميية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 50,
+      "soil_organic_matter_min": 2.0,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["مايو", "يونيو"],
+      "harvesting_months": ["سبتمبر", "أكتوبر"],
+      "duration_days": 120,
+      "growth_stages": {
+        "germination": 8,
+        "vegetative": 50,
+        "flowering": 35,
+        "maturation": 27
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["فول", "عدس", "حمص"],
+      "harmful_predecessors": ["سمسم", "عباد الشمس"],
+      "beneficial_successors": ["قمح", "شعير"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 500,
+      "irrigation_frequency": "كل 10-12 يوم",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي جداً",
+      "disease_resistance": ["ذبول الفيوزاريوم"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 1200,
+      "market_price_per_kg": 3.5,
+      "production_cost_per_hectare": 1500,
+      "profit_margin": 0.65,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 17.7,
+      "carbohydrate_content": 23.4,
+      "fat_content": 49.7,
+      "fiber_content": 11.8,
+      "nutritional_value": "عالي جداً"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1200,
+      "suitable_regions": ["الوسط", "الجنوب"],
+      "climate_zones": ["حار", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "زيتون",
+    "name_en": "Olive",
+    "scientific_name": "Olea europaea",
+    "icon": "🫒",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 8.5,
+      "ph_optimal": 7.5,
+      "temp_min": 10,
+      "temp_max": 40,
+      "temp_optimal": 25,
+      "rain_min": 200,
+      "rain_max": 600,
+      "rain_optimal": 400,
+      "humidity_min": 40,
+      "humidity_max": 65
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "صخرية", "طينية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 2.0,
+      "soil_salinity_tolerance": "عالي"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس", "أبريل"],
+      "harvesting_months": ["أكتوبر", "نوفمبر", "ديسمبر"],
+      "duration_days": 180,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 1095,
+        "productive": 7300,
+        "mature": 18250
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 350,
+      "irrigation_frequency": "كل 15-20 يوم",
+      "drought_tolerance": "عالي جداً",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "عالي جداً",
+      "disease_resistance": ["عين الطاووس"],
+      "pest_resistance": ["ذبابة الزيتون"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 8000,
+      "market_price_per_kg": 2.5,
+      "production_cost_per_hectare": 3500,
+      "profit_margin": 0.60,
+      "market_demand": "عالي جداً"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.8,
+      "carbohydrate_content": 6.3,
+      "fat_content": 10.7,
+      "fiber_content": 3.2,
+      "nutritional_value": "عالي جداً"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 800,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["متوسطي", "شبه جاف"]
+    }
+  },
+  {
+    "name": "نخيل تمر",
+    "name_en": "Date Palm",
+    "scientific_name": "Phoenix dactylifera",
+    "icon": "🌴",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 7.0,
+      "ph_max": 8.5,
+      "ph_optimal": 7.8,
+      "temp_min": 20,
+      "temp_max": 50,
+      "temp_optimal": 35,
+      "rain_min": 50,
+      "rain_max": 400,
+      "rain_optimal": 200,
+      "humidity_min": 30,
+      "humidity_max": 60
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["رملية", "طميية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 150,
+      "soil_organic_matter_min": 1.5,
+      "soil_salinity_tolerance": "عالي جداً"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل", "مايو"],
+      "harvesting_months": ["سبتمبر", "أكتوبر", "نوفمبر"],
+      "duration_days": 300,
+      "growth_stages": {
+        "establishment": 1095,
+        "juvenile": 1825,
+        "productive": 14600,
+        "mature": 36500
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 1200,
+      "irrigation_frequency": "كل 3-5 أيام",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي جداً",
+      "disease_resistance": ["تعفن القمة"],
+      "pest_resistance": ["سوسة النخيل"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 12000,
+      "market_price_per_kg": 4.0,
+      "production_cost_per_hectare": 8000,
+      "profit_margin": 0.70,
+      "market_demand": "عالي جداً"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.8,
+      "carbohydrate_content": 75.0,
+      "fat_content": 0.2,
+      "fiber_content": 6.7,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 400,
+      "suitable_regions": ["الجنوب", "الوسط"],
+      "climate_zones": ["صحراوي", "شبه صحراوي"]
+    }
+  },
+  {
+    "name": "حمص",
+    "name_en": "Chickpea",
+    "scientific_name": "Cicer arietinum",
+    "icon": "🌰",
+    "category": "بقوليات",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 9.0,
+      "ph_optimal": 7.5,
+      "temp_min": 15,
+      "temp_max": 30,
+      "temp_optimal": 22,
+      "rain_min": 400,
+      "rain_max": 600,
+      "rain_optimal": 500,
+      "humidity_min": 45,
+      "humidity_max": 65
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "طينية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 60,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["ديسمبر", "يناير"],
+      "harvesting_months": ["مايو", "يونيو"],
+      "duration_days": 140,
+      "growth_stages": {
+        "germination": 12,
+        "vegetative": 50,
+        "flowering": 35,
+        "pod_filling": 43
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["قمح", "شعير", "ذرة"],
+      "harmful_predecessors": ["حمص", "عدس", "فول"],
+      "beneficial_successors": ["قمح", "شعير"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": true
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 450,
+      "irrigation_frequency": "كل 12-15 يوم",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["ذبول الفيوزاريوم"],
+      "pest_resistance": ["حفار الساق"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 2500,
+      "market_price_per_kg": 1.8,
+      "production_cost_per_hectare": 1800,
+      "profit_margin": 0.50,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 19.3,
+      "carbohydrate_content": 61.0,
+      "fat_content": 6.0,
+      "fiber_content": 17.4,
+      "nutritional_value": "عالي جداً"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 2000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["شبه جاف", "معتدل"]
+    }
+  },
+  {
+    "name": "طماطم",
+    "name_en": "Tomato",
+    "scientific_name": "Solanum lycopersicum",
+    "icon": "🍅",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "ph_optimal": 6.5,
+      "temp_min": 18,
+      "temp_max": 27,
+      "temp_optimal": 22,
+      "rain_min": 400,
+      "rain_max": 800,
+      "rain_optimal": 600,
+      "humidity_min": 60,
+      "humidity_max": 85
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "عضوية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 40,
+      "soil_organic_matter_min": 4.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل", "مايو"],
+      "harvesting_months": ["يونيو", "يوليو", "أغسطس"],
+      "duration_days": 100,
+      "growth_stages": {
+        "germination": 5,
+        "vegetative": 35,
+        "flowering": 25,
+        "fruiting": 35
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["بصل", "فول", "ثوم"],
+      "harmful_predecessors": ["طماطم", "باذنجان", "فلفل"],
+      "beneficial_successors": ["خيار", "كوسا"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 550,
+      "irrigation_frequency": "كل 3-5 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["ذبول البكتيري"],
+      "pest_resistance": ["حشرة المن الأبيض"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 45000,
+      "market_price_per_kg": 1.2,
+      "production_cost_per_hectare": 8000,
+      "profit_margin": 0.55,
+      "market_demand": "عالي جداً"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.9,
+      "carbohydrate_content": 3.9,
+      "fat_content": 0.2,
+      "fiber_content": 1.2,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1200,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "بصل",
+    "name_en": "Onion",
+    "scientific_name": "Allium cepa",
+    "icon": "🧅",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.0,
+      "ph_optimal": 6.5,
+      "temp_min": 12,
+      "temp_max": 25,
+      "temp_optimal": 18,
+      "rain_min": 350,
+      "rain_max": 550,
+      "rain_optimal": 450,
+      "humidity_min": 50,
+      "humidity_max": 70
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "رملية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 30,
+      "soil_organic_matter_min": 3.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["أكتوبر", "نوفمبر"],
+      "harvesting_months": ["مارس", "أبريل"],
+      "duration_days": 120,
+      "growth_stages": {
+        "germination": 10,
+        "vegetative": 60,
+        "bulb_formation": 40,
+        "maturation": 10
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["طماطم", "سبانخ", "خس"],
+      "harmful_predecessors": ["بصل", "ثوم"],
+      "beneficial_successors": ["جزر", "فجل"],
+      "rotation_cycle_years": 4,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 400,
+      "irrigation_frequency": "كل 5-7 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["عفن الرقبة"],
+      "pest_resistance": ["ذبابة البصل"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 25000,
+      "market_price_per_kg": 0.8,
+      "production_cost_per_hectare": 4500,
+      "profit_margin": 0.45,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.1,
+      "carbohydrate_content": 9.3,
+      "fat_content": 0.1,
+      "fiber_content": 1.7,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1500,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه جاف"]
+    }
+  },
+  {
+    "name": "بطاطا",
+    "name_en": "Potato",
+    "scientific_name": "Solanum tuberosum",
+    "icon": "🥔",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 5.0,
+      "ph_max": 6.5,
+      "ph_optimal": 5.8,
+      "temp_min": 15,
+      "temp_max": 25,
+      "temp_optimal": 20,
+      "rain_min": 300,
+      "rain_max": 500,
+      "rain_optimal": 400,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["رملية", "طميية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 50,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس", "أكتوبر", "نوفمبر"],
+      "harvesting_months": ["مايو", "يونيو", "يناير", "فبراير"],
+      "duration_days": 110,
+      "growth_stages": {
+        "sprouting": 14,
+        "vegetative": 35,
+        "tuber_initiation": 25,
+        "tuber_bulking": 36
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["فاصولياء", "عدس", "برسيم"],
+      "harmful_predecessors": ["بطاطا", "طماطم", "باذنجان"],
+      "beneficial_successors": ["قمح", "شعير"],
+      "rotation_cycle_years": 4,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 450,
+      "irrigation_frequency": "كل 5-8 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "منخفض",
+      "disease_resistance": ["لفحة متأخرة"],
+      "pest_resistance": ["خنفساء البطاطا"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 35000,
+      "market_price_per_kg": 0.5,
+      "production_cost_per_hectare": 6000,
+      "profit_margin": 0.40,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 2.0,
+      "carbohydrate_content": 17.5,
+      "fat_content": 0.1,
+      "fiber_content": 2.2,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 2000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "بارد"]
+    }
+  },
+  {
+    "name": "القطن",
+    "name_en": "Cotton",
+    "scientific_name": "Gossypium hirsutum",
+    "icon": "🌱",
+    "category": "محاصيل صناعية",
+    
+    "environmental_requirements": {
+      "ph_min": 5.8,
+      "ph_max": 8.0,
+      "ph_optimal": 6.5,
+      "temp_min": 20,
+      "temp_max": 35,
+      "temp_optimal": 28,
+      "rain_min": 500,
+      "rain_max": 1200,
+      "rain_optimal": 800,
+      "humidity_min": 50,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طينية", "طميية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["أبريل", "مايو", "يونيو"],
+      "harvesting_months": ["سبتمبر", "أكتوبر", "نوفمبر"],
+      "duration_days": 180,
+      "growth_stages": {
+        "germination": 10,
+        "vegetative": 60,
+        "flowering": 45,
+        "boll_development": 65
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["قمح", "شعير", "برسيم"],
+      "harmful_predecessors": ["قطن", "باذنجان"],
+      "beneficial_successors": ["قمح", "عدس"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 700,
+      "irrigation_frequency": "كل 7-10 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["ذبول الفيرتيسيليوم"],
+      "pest_resistance": ["دودة اللوز"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 2800,
+      "market_price_per_kg": 2.2,
+      "production_cost_per_hectare": 3500,
+      "profit_margin": 0.45,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 0,
+      "carbohydrate_content": 0,
+      "fat_content": 0,
+      "fiber_content": 95,
+      "nutritional_value": "غير غذائي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1000,
+      "suitable_regions": ["الوسط", "الجنوب"],
+      "climate_zones": ["شبه استوائي", "معتدل"]
+    }
+  },
+  {
+    "name": "الحمضيات",
+    "name_en": "Citrus",
+    "scientific_name": "Citrus spp.",
+    "icon": "🍊",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 15,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 600,
+      "rain_max": 1200,
+      "rain_optimal": 900,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "رملية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس", "أبريل"],
+      "harvesting_months": ["نوفمبر", "ديسمبر", "يناير", "فبراير"],
+      "duration_days": 300,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 1095,
+        "productive": 7300,
+        "mature": 14600
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 800,
+      "irrigation_frequency": "كل 5-7 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["تصمغ الحمضيات"],
+      "pest_resistance": ["حشرة القشرية"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 25000,
+      "market_price_per_kg": 1.5,
+      "production_cost_per_hectare": 12000,
+      "profit_margin": 0.55,
+      "market_demand": "عالي جداً"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.9,
+      "carbohydrate_content": 11.7,
+      "fat_content": 0.1,
+      "fiber_content": 2.4,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 800,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["متوسطي", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "فول سوداني",
+    "name_en": "Peanut",
+    "scientific_name": "Arachis hypogaea",
+    "icon": "🥜",
+    "category": "بقوليات",
+    
+    "environmental_requirements": {
+      "ph_min": 5.8,
+      "ph_max": 6.2,
+      "ph_optimal": 6.0,
+      "temp_min": 20,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 500,
+      "rain_max": 1000,
+      "rain_optimal": 750,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["رملية", "طميية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 60,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["أبريل", "مايو"],
+      "harvesting_months": ["سبتمبر", "أكتوبر"],
+      "duration_days": 120,
+      "growth_stages": {
+        "germination": 8,
+        "vegetative": 40,
+        "flowering": 30,
+        "pod_filling": 42
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["ذرة", "قطن", "قمح"],
+      "harmful_predecessors": ["فول سوداني", "فول"],
+      "beneficial_successors": ["قمح", "شعير"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": true
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 600,
+      "irrigation_frequency": "كل 7-10 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["تبقع الأوراق"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 3500,
+      "market_price_per_kg": 2.5,
+      "production_cost_per_hectare": 3000,
+      "profit_margin": 0.50,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 25.8,
+      "carbohydrate_content": 16.1,
+      "fat_content": 49.2,
+      "fiber_content": 8.5,
+      "nutritional_value": "عالي جداً"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1000,
+      "suitable_regions": ["الوسط", "الجنوب"],
+      "climate_zones": ["شبه استوائي", "معتدل"]
+    }
+  },
+  {
+    "name": "فول",
+    "name_en": "Fava Bean",
+    "scientific_name": "Vicia faba",
+    "icon": "🌱",
+    "category": "بقوليات",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 12,
+      "temp_max": 25,
+      "temp_optimal": 18,
+      "rain_min": 400,
+      "rain_max": 800,
+      "rain_optimal": 600,
+      "humidity_min": 50,
+      "humidity_max": 75
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طينية", "طميية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 50,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["نوفمبر", "ديسمبر"],
+      "harvesting_months": ["أبريل", "مايو"],
+      "duration_days": 130,
+      "growth_stages": {
+        "germination": 10,
+        "vegetative": 45,
+        "flowering": 30,
+        "pod_filling": 45
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["قمح", "ذرة", "شعير"],
+      "harmful_predecessors": ["فول", "عدس", "حمص"],
+      "beneficial_successors": ["قمح", "ذرة"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": true
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 500,
+      "irrigation_frequency": "كل 10-12 يوم",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "متوسط"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "عالي",
+      "heat_tolerance": "منخفض",
+      "disease_resistance": ["صدأ الفول"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 3500,
+      "market_price_per_kg": 1.5,
+      "production_cost_per_hectare": 2000,
+      "profit_margin": 0.45,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 26.1,
+      "carbohydrate_content": 58.3,
+      "fat_content": 1.5,
+      "fiber_content": 25.0,
+      "nutritional_value": "عالي جداً"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1800,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "بارد"]
+    }
+  },
+  {
+    "name": "خيار",
+    "name_en": "Cucumber",
+    "scientific_name": "Cucumis sativus",
+    "icon": "🥒",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 5.5,
+      "ph_max": 7.0,
+      "ph_optimal": 6.2,
+      "temp_min": 20,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 500,
+      "rain_max": 700,
+      "rain_optimal": 600,
+      "humidity_min": 70,
+      "humidity_max": 90
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "عضوية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 30,
+      "soil_organic_matter_min": 4.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل", "مايو"],
+      "harvesting_months": ["يونيو", "يوليو", "أغسطس"],
+      "duration_days": 75,
+      "growth_stages": {
+        "germination": 5,
+        "vegetative": 25,
+        "flowering": 20,
+        "fruiting": 25
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["كوسا", "جزر", "بصل"],
+      "harmful_predecessors": ["خيار", "كوسا", "بطيخ"],
+      "beneficial_successors": ["فجل", "سبانخ"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 450,
+      "irrigation_frequency": "كل 2-3 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["البياض الدقيقي"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 35000,
+      "market_price_per_kg": 0.8,
+      "production_cost_per_hectare": 6000,
+      "profit_margin": 0.40,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.7,
+      "carbohydrate_content": 3.6,
+      "fat_content": 0.1,
+      "fiber_content": 0.5,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "باذنجان",
+    "name_en": "Eggplant",
+    "scientific_name": "Solanum melongena",
+    "icon": "🍆",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 5.5,
+      "ph_max": 7.0,
+      "ph_optimal": 6.2,
+      "temp_min": 20,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 400,
+      "rain_max": 600,
+      "rain_optimal": 500,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "عضوية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 40,
+      "soil_organic_matter_min": 3.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["أبريل", "مايو"],
+      "harvesting_months": ["يوليو", "أغسطس", "سبتمبر"],
+      "duration_days": 110,
+      "growth_stages": {
+        "germination": 7,
+        "vegetative": 40,
+        "flowering": 25,
+        "fruiting": 38
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["كوسا", "بصل", "فول"],
+      "harmful_predecessors": ["باذنجان", "طماطم", "فلفل"],
+      "beneficial_successors": ["خيار", "جزر"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 500,
+      "irrigation_frequency": "كل 4-6 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["ذبول الفيرتيسيليوم"],
+      "pest_resistance": ["خنفساء البراغيث"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 30000,
+      "market_price_per_kg": 1.0,
+      "production_cost_per_hectare": 7000,
+      "profit_margin": 0.42,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.0,
+      "carbohydrate_content": 6.0,
+      "fat_content": 0.2,
+      "fiber_content": 3.0,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1200,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "فلفل حلو",
+    "name_en": "Bell Pepper",
+    "scientific_name": "Capsicum annuum",
+    "icon": "🫑",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.0,
+      "ph_optimal": 6.5,
+      "temp_min": 18,
+      "temp_max": 27,
+      "temp_optimal": 22,
+      "rain_min": 400,
+      "rain_max": 700,
+      "rain_optimal": 550,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "عضوية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 40,
+      "soil_organic_matter_min": 3.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل", "مايو"],
+      "harvesting_months": ["يونيو", "يوليو", "أغسطس"],
+      "duration_days": 100,
+      "growth_stages": {
+        "germination": 8,
+        "vegetative": 35,
+        "flowering": 25,
+        "fruiting": 32
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["بصل", "فول", "جزر"],
+      "harmful_predecessors": ["فلفل", "طماطم", "باذنجان"],
+      "beneficial_successors": ["خيار", "كوسا"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 500,
+      "irrigation_frequency": "كل 4-6 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["البياض الدقيقي"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 28000,
+      "market_price_per_kg": 1.5,
+      "production_cost_per_hectare": 8000,
+      "profit_margin": 0.48,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.0,
+      "carbohydrate_content": 7.3,
+      "fat_content": 0.3,
+      "fiber_content": 2.5,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1200,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "عنب",
+    "name_en": "Grapes",
+    "scientific_name": "Vitis vinifera",
+    "icon": "🍇",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 15,
+      "temp_max": 25,
+      "temp_optimal": 20,
+      "rain_min": 400,
+      "rain_max": 800,
+      "rain_optimal": 600,
+      "humidity_min": 50,
+      "humidity_max": 70
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "صخرية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس"],
+      "harvesting_months": ["أغسطس", "سبتمبر", "أكتوبر"],
+      "duration_days": 200,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 730,
+        "productive": 7300,
+        "mature": 18250
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 500,
+      "irrigation_frequency": "كل 7-10 أيام",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["البياض الدقيقي"],
+      "pest_resistance": ["حشرة الفيلوكسيرا"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 15000,
+      "market_price_per_kg": 2.0,
+      "production_cost_per_hectare": 8000,
+      "profit_margin": 0.60,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.7,
+      "carbohydrate_content": 17.2,
+      "fat_content": 0.2,
+      "fiber_content": 0.9,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 200,
+      "altitude_max": 1000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["متوسطي", "معتدل"]
+    }
+  },
+  {
+    "name": "برتقال",
+    "name_en": "Orange",
+    "scientific_name": "Citrus sinensis",
+    "icon": "🍊",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 15,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 600,
+      "rain_max": 1200,
+      "rain_optimal": 900,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "رملية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس", "أبريل"],
+      "harvesting_months": ["نوفمبر", "ديسمبر", "يناير"],
+      "duration_days": 300,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 1095,
+        "productive": 7300,
+        "mature": 14600
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 800,
+      "irrigation_frequency": "كل 5-7 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["تصمغ الحمضيات"],
+      "pest_resistance": ["حشرة القشرية"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 30000,
+      "market_price_per_kg": 1.2,
+      "production_cost_per_hectare": 12000,
+      "profit_margin": 0.50,
+      "market_demand": "عالي جداً"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.9,
+      "carbohydrate_content": 11.7,
+      "fat_content": 0.1,
+      "fiber_content": 2.4,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 800,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["متوسطي", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "بطيخ",
+    "name_en": "Watermelon",
+    "scientific_name": "Citrullus lanatus",
+    "icon": "🍉",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 6.8,
+      "ph_optimal": 6.4,
+      "temp_min": 23,
+      "temp_max": 30,
+      "temp_optimal": 27,
+      "rain_min": 400,
+      "rain_max": 600,
+      "rain_optimal": 500,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["رملية", "طميية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 60,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل"],
+      "harvesting_months": ["يونيو", "يوليو", "أغسطس"],
+      "duration_days": 90,
+      "growth_stages": {
+        "germination": 7,
+        "vegetative": 30,
+        "flowering": 20,
+        "fruiting": 33
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["فاصولياء", "بصل", "جزر"],
+      "harmful_predecessors": ["بطيخ", "خيار", "كوسا"],
+      "beneficial_successors": ["فجل", "سبانخ"],
+      "rotation_cycle_years": 4,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 400,
+      "irrigation_frequency": "كل 5-7 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["ذبول الفيوزاريوم"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 40000,
+      "market_price_per_kg": 0.4,
+      "production_cost_per_hectare": 5000,
+      "profit_margin": 0.45,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.6,
+      "carbohydrate_content": 7.6,
+      "fat_content": 0.2,
+      "fiber_content": 0.4,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 800,
+      "suitable_regions": ["الوسط", "الجنوب"],
+      "climate_zones": ["حار", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "كوسا",
+    "name_en": "Zucchini",
+    "scientific_name": "Cucurbita pepo",
+    "icon": "🥒",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 20,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 400,
+      "rain_max": 600,
+      "rain_optimal": 500,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "عضوية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 40,
+      "soil_organic_matter_min": 3.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل", "مايو"],
+      "harvesting_months": ["مايو", "يونيو", "يوليو"],
+      "duration_days": 65,
+      "growth_stages": {
+        "germination": 5,
+        "vegetative": 20,
+        "flowering": 15,
+        "fruiting": 25
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["عدس", "بصل", "جزر"],
+      "harmful_predecessors": ["كوسا", "خيار", "بطيخ"],
+      "beneficial_successors": ["فجل", "سبانخ"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 400,
+      "irrigation_frequency": "كل 3-5 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["البياض الدقيقي"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 32000,
+      "market_price_per_kg": 0.7,
+      "production_cost_per_hectare": 5500,
+      "profit_margin": 0.40,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.2,
+      "carbohydrate_content": 3.1,
+      "fat_content": 0.3,
+      "fiber_content": 1.0,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "فصة",
+    "name_en": "Alfalfa",
+    "scientific_name": "Medicago sativa",
+    "icon": "🌿",
+    "category": "أعلاف",
+    
+    "environmental_requirements": {
+      "ph_min": 6.5,
+      "ph_max": 8.0,
+      "ph_optimal": 7.2,
+      "temp_min": 15,
+      "temp_max": 30,
+      "temp_optimal": 22,
+      "rain_min": 400,
+      "rain_max": 800,
+      "rain_optimal": 600,
+      "humidity_min": 50,
+      "humidity_max": 70
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "طينية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["سبتمبر", "أكتوبر", "نوفمبر"],
+      "harvesting_months": ["مايو", "يونيو", "يوليو", "أغسطس"],
+      "duration_days": 365,
+      "growth_stages": {
+        "establishment": 60,
+        "vegetative": 180,
+        "flowering": 90,
+        "regrowth": 35
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["قمح", "شعير", "ذرة"],
+      "harmful_predecessors": ["فصة", "برسيم"],
+      "beneficial_successors": ["قمح", "ذرة", "قطن"],
+      "rotation_cycle_years": 4,
+      "nitrogen_fixing": true
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 800,
+      "irrigation_frequency": "كل 10-15 يوم",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "متوسط"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "عالي",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["تبقع الأوراق"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 15000,
+      "market_price_per_kg": 0.3,
+      "production_cost_per_hectare": 2500,
+      "profit_margin": 0.45,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 18.9,
+      "carbohydrate_content": 28.2,
+      "fat_content": 2.2,
+      "fiber_content": 25.0,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 2000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه جاف"]
+    }
+  },
+  {
+    "name": "تفاح",
+    "name_en": "Apple",
+    "scientific_name": "Malus domestica",
+    "icon": "🍏",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.0,
+      "ph_optimal": 6.5,
+      "temp_min": 10,
+      "temp_max": 25,
+      "temp_optimal": 18,
+      "rain_min": 600,
+      "rain_max": 1000,
+      "rain_optimal": 800,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "طينية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس"],
+      "harvesting_months": ["أغسطس", "سبتمبر", "أكتوبر"],
+      "duration_days": 200,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 1095,
+        "productive": 7300,
+        "mature": 18250
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 700,
+      "irrigation_frequency": "كل 7-10 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "عالي",
+      "heat_tolerance": "منخفض",
+      "disease_resistance": ["جرب التفاح"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 25000,
+      "market_price_per_kg": 1.8,
+      "production_cost_per_hectare": 15000,
+      "profit_margin": 0.50,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.3,
+      "carbohydrate_content": 13.8,
+      "fat_content": 0.2,
+      "fiber_content": 2.4,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 800,
+      "altitude_max": 2500,
+      "suitable_regions": ["الشمال"],
+      "climate_zones": ["بارد", "معتدل"]
+    }
+  },
+  {
+    "name": "مشمش",
+    "name_en": "Apricot",
+    "scientific_name": "Prunus armeniaca",
+    "icon": "🍑",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 15,
+      "temp_max": 25,
+      "temp_optimal": 20,
+      "rain_min": 400,
+      "rain_max": 800,
+      "rain_optimal": 600,
+      "humidity_min": 50,
+      "humidity_max": 70
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "رملية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 80,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس"],
+      "harvesting_months": ["يونيو", "يوليو"],
+      "duration_days": 150,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 730,
+        "productive": 5475,
+        "mature": 14600
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 500,
+      "irrigation_frequency": "كل 7-10 أيام",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["تبقع الأوراق"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 18000,
+      "market_price_per_kg": 2.5,
+      "production_cost_per_hectare": 12000,
+      "profit_margin": 0.60,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.4,
+      "carbohydrate_content": 11.1,
+      "fat_content": 0.4,
+      "fiber_content": 2.0,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 400,
+      "altitude_max": 1500,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه جاف"]
+    }
+  },
+  {
+    "name": "خوخ",
+    "name_en": "Peach",
+    "scientific_name": "Prunus persica",
+    "icon": "🍑",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.0,
+      "ph_optimal": 6.5,
+      "temp_min": 15,
+      "temp_max": 25,
+      "temp_optimal": 20,
+      "rain_min": 500,
+      "rain_max": 900,
+      "rain_optimal": 700,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "رملية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 80,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس"],
+      "harvesting_months": ["يونيو", "يوليو", "أغسطس"],
+      "duration_days": 160,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 730,
+        "productive": 5475,
+        "mature": 14600
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 600,
+      "irrigation_frequency": "كل 5-7 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["تجعد الأوراق"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 20000,
+      "market_price_per_kg": 2.2,
+      "production_cost_per_hectare": 13000,
+      "profit_margin": 0.55,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.9,
+      "carbohydrate_content": 9.5,
+      "fat_content": 0.3,
+      "fiber_content": 1.5,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 200,
+      "altitude_max": 1200,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "رمان",
+    "name_en": "Pomegranate",
+    "scientific_name": "Punica granatum",
+    "icon": "🍎",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 5.5,
+      "ph_max": 7.5,
+      "ph_optimal": 6.5,
+      "temp_min": 15,
+      "temp_max": 35,
+      "temp_optimal": 25,
+      "rain_min": 300,
+      "rain_max": 600,
+      "rain_optimal": 450,
+      "humidity_min": 40,
+      "humidity_max": 65
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "رملية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 80,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "عالي"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس", "أبريل"],
+      "harvesting_months": ["سبتمبر", "أكتوبر", "نوفمبر"],
+      "duration_days": 200,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 1095,
+        "productive": 7300,
+        "mature": 18250
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 400,
+      "irrigation_frequency": "كل 10-15 يوم",
+      "drought_tolerance": "عالي",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["تبقع الأوراق"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 12000,
+      "market_price_per_kg": 3.0,
+      "production_cost_per_hectare": 8000,
+      "profit_margin": 0.65,
+      "market_demand": "عالي جداً"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.7,
+      "carbohydrate_content": 18.7,
+      "fat_content": 1.2,
+      "fiber_content": 4.0,
+      "nutritional_value": "عالي جداً"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1000,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["شبه جاف", "معتدل"]
+    }
+  },
+  {
+    "name": "ليمون",
+    "name_en": "Lemon",
+    "scientific_name": "Citrus limon",
+    "icon": "🍋",
+    "category": "فواكه",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 15,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 600,
+      "rain_max": 1200,
+      "rain_optimal": 900,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "رملية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 100,
+      "soil_organic_matter_min": 3.0,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["فبراير", "مارس", "أبريل"],
+      "harvesting_months": ["نوفمبر", "ديسمبر", "يناير", "فبراير"],
+      "duration_days": 300,
+      "growth_stages": {
+        "establishment": 365,
+        "juvenile": 1095,
+        "productive": 7300,
+        "mature": 14600
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": [],
+      "harmful_predecessors": [],
+      "beneficial_successors": [],
+      "rotation_cycle_years": 0,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 800,
+      "irrigation_frequency": "كل 5-7 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["تصمغ الحمضيات"],
+      "pest_resistance": ["حشرة القشرية"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 22000,
+      "market_price_per_kg": 1.8,
+      "production_cost_per_hectare": 12000,
+      "profit_margin": 0.52,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 1.1,
+      "carbohydrate_content": 9.3,
+      "fat_content": 0.3,
+      "fiber_content": 2.8,
+      "nutritional_value": "عالي"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 800,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["متوسطي", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "كرفس",
+    "name_en": "Celery",
+    "scientific_name": "Apium graveolens",
+    "icon": "🥬",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 6.5,
+      "ph_optimal": 6.2,
+      "temp_min": 15,
+      "temp_max": 21,
+      "temp_optimal": 18,
+      "rain_min": 500,
+      "rain_max": 800,
+      "rain_optimal": 650,
+      "humidity_min": 70,
+      "humidity_max": 90
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["عضوية", "طميية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 30,
+      "soil_organic_matter_min": 4.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["أكتوبر", "نوفمبر"],
+      "harvesting_months": ["يناير", "فبراير", "مارس"],
+      "duration_days": 85,
+      "growth_stages": {
+        "germination": 12,
+        "vegetative": 50,
+        "stem_development": 18,
+        "maturation": 5
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["فجل", "بصل", "جزر"],
+      "harmful_predecessors": ["كرفس", "جزر"],
+      "beneficial_successors": ["طماطم", "خيار"],
+      "rotation_cycle_years": 3,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 600,
+      "irrigation_frequency": "كل 2-3 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "منخفض",
+      "disease_resistance": ["تبقع الأوراق"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 25000,
+      "market_price_per_kg": 1.5,
+      "production_cost_per_hectare": 8000,
+      "profit_margin": 0.40,
+      "market_demand": "متوسط"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.7,
+      "carbohydrate_content": 3.0,
+      "fat_content": 0.2,
+      "fiber_content": 1.6,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 800,
+      "suitable_regions": ["الشمال"],
+      "climate_zones": ["معتدل", "بارد"]
+    }
+  },
+  {
+    "name": "نعناع",
+    "name_en": "Mint",
+    "scientific_name": "Mentha spicata",
+    "icon": "🌿",
+    "category": "أعشاب",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 15,
+      "temp_max": 25,
+      "temp_optimal": 20,
+      "rain_min": 500,
+      "rain_max": 800,
+      "rain_optimal": 650,
+      "humidity_min": 60,
+      "humidity_max": 85
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "عضوية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 25,
+      "soil_organic_matter_min": 3.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["مارس", "أبريل", "مايو"],
+      "harvesting_months": ["يونيو", "يوليو", "أغسطس", "سبتمبر"],
+      "duration_days": 60,
+      "growth_stages": {
+        "establishment": 15,
+        "vegetative": 30,
+        "flowering": 10,
+        "regrowth": 5
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["بصل", "ثوم", "جزر"],
+      "harmful_predecessors": ["نعناع", "ريحان"],
+      "beneficial_successors": ["طماطم", "خيار"],
+      "rotation_cycle_years": 2,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 500,
+      "irrigation_frequency": "كل 2-3 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "متوسط"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "متوسط",
+      "heat_tolerance": "متوسط",
+      "disease_resistance": ["صدأ النعناع"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 8000,
+      "market_price_per_kg": 3.0,
+      "production_cost_per_hectare": 4000,
+      "profit_margin": 0.70,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 3.8,
+      "carbohydrate_content": 8.4,
+      "fat_content": 0.9,
+      "fiber_content": 8.0,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1200,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "ريحان",
+    "name_en": "Basil",
+    "scientific_name": "Ocimum basilicum",
+    "icon": "🌿",
+    "category": "أعشاب",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.5,
+      "ph_optimal": 6.8,
+      "temp_min": 20,
+      "temp_max": 30,
+      "temp_optimal": 25,
+      "rain_min": 400,
+      "rain_max": 600,
+      "rain_optimal": 500,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طميية", "عضوية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 20,
+      "soil_organic_matter_min": 3.5,
+      "soil_salinity_tolerance": "منخفض"
+    },
+    
+    "timing": {
+      "planting_months": ["أبريل", "مايو"],
+      "harvesting_months": ["يونيو", "يوليو", "أغسطس"],
+      "duration_days": 60,
+      "growth_stages": {
+        "germination": 7,
+        "vegetative": 35,
+        "flowering": 15,
+        "seed_formation": 3
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["نعناع", "بصل", "ثوم"],
+      "harmful_predecessors": ["ريحان", "طماطم"],
+      "beneficial_successors": ["خيار", "كوسا"],
+      "rotation_cycle_years": 2,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 400,
+      "irrigation_frequency": "كل 2-3 أيام",
+      "drought_tolerance": "منخفض",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي",
+      "disease_resistance": ["ذبول الفيوزاريوم"],
+      "pest_resistance": ["حشرة المن"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 6000,
+      "market_price_per_kg": 4.0,
+      "production_cost_per_hectare": 3500,
+      "profit_margin": 0.75,
+      "market_demand": "عالي"
+    },
+    
+    "nutrition": {
+      "protein_content": 3.2,
+      "carbohydrate_content": 2.6,
+      "fat_content": 0.6,
+      "fiber_content": 1.6,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1000,
+      "suitable_regions": ["الوسط", "الجنوب"],
+      "climate_zones": ["معتدل", "شبه استوائي"]
+    }
+  },
+  {
+    "name": "فجل",
+    "name_en": "Radish",
+    "scientific_name": "Raphanus sativus",
+    "icon": "🌶️",
+    "category": "خضروات",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 7.0,
+      "ph_optimal": 6.5,
+      "temp_min": 10,
+      "temp_max": 25,
+      "temp_optimal": 18,
+      "rain_min": 350,
+      "rain_max": 500,
+      "rain_optimal": 425,
+      "humidity_min": 60,
+      "humidity_max": 80
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["رملية", "طميية"],
+      "soil_drainage": "ممتاز",
+      "soil_depth_min": 20,
+      "soil_organic_matter_min": 2.5,
+      "soil_salinity_tolerance": "متوسط"
+    },
+    
+    "timing": {
+      "planting_months": ["أكتوبر", "نوفمبر"],
+      "harvesting_months": ["ديسمبر", "يناير"],
+      "duration_days": 50,
+      "growth_stages": {
+        "germination": 5,
+        "vegetative": 20,
+        "root_development": 20,
+        "maturation": 5
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["سبانخ", "كوسا", "خيار"],
+      "harmful_predecessors": ["فجل", "جزر"],
+      "beneficial_successors": ["طماطم", "باذنجان"],
+      "rotation_cycle_years": 2,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 300,
+      "irrigation_frequency": "كل 3-4 أيام",
+      "drought_tolerance": "متوسط",
+      "flood_tolerance": "منخفض"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "عالي",
+      "heat_tolerance": "منخفض",
+      "disease_resistance": ["تبقع الأوراق"],
+      "pest_resistance": ["خنفساء البراغيث"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 15000,
+      "market_price_per_kg": 0.8,
+      "production_cost_per_hectare": 2500,
+      "profit_margin": 0.50,
+      "market_demand": "متوسط"
+    },
+    
+    "nutrition": {
+      "protein_content": 0.7,
+      "carbohydrate_content": 2.0,
+      "fat_content": 0.1,
+      "fiber_content": 1.6,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1500,
+      "suitable_regions": ["الشمال", "الوسط"],
+      "climate_zones": ["معتدل", "بارد"]
+    }
+  },
+  {
+    "name": "ذرة رفيعة",
+    "name_en": "Sorghum",
+    "scientific_name": "Sorghum bicolor",
+    "icon": "🌾",
+    "category": "حبوب",
+    
+    "environmental_requirements": {
+      "ph_min": 6.0,
+      "ph_max": 8.5,
+      "ph_optimal": 7.2,
+      "temp_min": 25,
+      "temp_max": 35,
+      "temp_optimal": 30,
+      "rain_min": 400,
+      "rain_max": 800,
+      "rain_optimal": 600,
+      "humidity_min": 40,
+      "humidity_max": 70
+    },
+    
+    "soil_requirements": {
+      "soil_types": ["طينية", "طميية"],
+      "soil_drainage": "جيد",
+      "soil_depth_min": 60,
+      "soil_organic_matter_min": 2.0,
+      "soil_salinity_tolerance": "عالي"
+    },
+    
+    "timing": {
+      "planting_months": ["أبريل", "مايو", "يونيو"],
+      "harvesting_months": ["سبتمبر", "أكتوبر", "نوفمبر"],
+      "duration_days": 130,
+      "growth_stages": {
+        "germination": 8,
+        "vegetative": 50,
+        "flowering": 30,
+        "grain_filling": 42
+      }
+    },
+    
+    "rotation": {
+      "beneficial_predecessors": ["فول", "عدس", "حمص"],
+      "harmful_predecessors": ["ذرة رفيعة", "ذرة"],
+      "beneficial_successors": ["قمح", "شعير"],
+      "rotation_cycle_years": 2,
+      "nitrogen_fixing": false
+    },
+    
+    "water_management": {
+      "water_requirement_mm": 450,
+      "irrigation_frequency": "كل 10-15 يوم",
+      "drought_tolerance": "عالي جداً",
+      "flood_tolerance": "متوسط"
+    },
+    
+    "tolerance": {
+      "frost_tolerance": "منخفض",
+      "heat_tolerance": "عالي جداً",
+      "disease_resistance": ["صدأ الأوراق"],
+      "pest_resistance": ["دودة الساق"]
+    },
+    
+    "economics": {
+      "yield_per_hectare": 5000,
+      "market_price_per_kg": 0.5,
+      "production_cost_per_hectare": 1800,
+      "profit_margin": 0.35,
+      "market_demand": "متوسط"
+    },
+    
+    "nutrition": {
+      "protein_content": 11.3,
+      "carbohydrate_content": 74.6,
+      "fat_content": 3.3,
+      "fiber_content": 6.7,
+      "nutritional_value": "متوسط"
+    },
+    
+    "geography": {
+      "altitude_min": 0,
+      "altitude_max": 1500,
+      "suitable_regions": ["الوسط", "الجنوب"],
+      "climate_zones": ["حار", "شبه جاف"]
+    }
+  }
+]

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تشخيص أمراض النبات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>نظام تشخيص أمراض النبات 🌿</h1>
+        <form id="upload-form">
+            <input type="file" id="image-input" accept="image/*" required>
+            <button type="submit">تشخيص المرض</button>
+        </form>
+        <div id="result"></div>
+        <img id="preview" style="display:none;max-width:300px;margin-top:20px;"/>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
